@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./index.css";
+import Navbar from "./Components/Navbar";
+import Header from "./Components/Header";
+import WorkingStacks from "./Components/WorkingStacks";
+import About from "./Components/About";
+import Projects from "./Components/Projects";
+import Contacts from "./Components/Contacts";
+import Loader from "./Components/Loader";
+import { useState, useEffect } from "react";
 
 function App() {
+  const [loader, setloader] = useState(true);
+
+  useEffect(() => {
+      setTimeout(() => {
+        setloader(false);
+      }, 3000);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='bg-gradient-to-br from-gray-600 ... head'>
+      {loader ? (
+        <Loader/>
+      ) : (
+        <div>
+          <Navbar />
+          <Header />
+          <About />
+          <WorkingStacks />
+          <Projects />
+          <Contacts />
+        </div>
+      )}
     </div>
   );
 }
