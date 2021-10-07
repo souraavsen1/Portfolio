@@ -1,28 +1,25 @@
 import React from "react";
 import "../index.css";
 import { Link } from "react-scroll";
-// import WorkingStacks from "./WorkingStacks";
 
-const logo1 = "<";
-const logo2 = "Sourav Sen";
-const logo3 = "/>";
+// const logo1 = "<";
+// const logo2 = "Sourav Sen";
+// const logo3 = "/>";
 
 
 function Navbar() {
   return (
-    <header className='nav_main top-0 sticky shadow-xl z-20'>
-      <div className=' text-white flex items-center justify-between w-10/12 mx-auto py-5 h-20'>
+    <header className='top-0 sticky shadow-xl z-20 bg-gray-800 bg-opacity-95'>
+      <div className='w-10/12 text-white flex items-center justify-between mx-auto py-4'>
         <Link to='home' smooth={true} duration={1000}>
           <div className='text-4xl font-bold flex cursor-pointer'>
-            <h1 style={{ color: "rgb(165, 244, 247)" }}>{logo1}</h1>
-            <h1>{logo2}</h1>
-            <h1 style={{ color: "rgb(165, 244, 247)" }}>{logo3}</h1>
+            <h3 className='text-3xl font-normal'>Sourav Sen</h3>
           </div>
         </Link>
-        <div className=' nav flex items-center justify-between text-lg font-semibold'>
+        <div className='flex items-center justify-between text-md font-normal'>
           <div className='hover:text-green-300'>
             <Link to='home' smooth={true} spy={true} duration={700}>
-              <a className='cursor-pointer '>
+              <a className='cursor-pointer'>
                 <h2>Home</h2>
               </a>
             </Link>

@@ -6,16 +6,15 @@ function About() {
   return (
     <div
       id='about'
-      className='ws min-h-screen flex-col bg-gradient-to-br from-gray-700 ... pt-40 flex justify-center items-center'
+      className='ws min-h-screen flex-col bg-gradient-to-br from-gray-700 ... pt-40 flex justify-center items-center font_poppins'
     >
       <h1
-        className='text-5xl text-white mb-20 font-Texturina'
-        style={{ fontFamily: "Texturina, serif" }}
+        className='text-4xl font-medium text-white mb-20'
       >
         About Me
       </h1>
-      <div className='w-10/12  pb-28 flex flex-col md:flex-row items-center justify-between'>
-        <div className='min-w-max mr-28  shadow-2xl'>
+      <div className='w-10/12 pb-28 flex flex-col md:flex-row items-center justify-between'>
+        <div className='min-w-max mr-28 shadow-2xl'>
           <Zoom left>
             <img
               src={ss}
@@ -26,24 +25,22 @@ function About() {
             />
           </Zoom>
         </div>
-        <div className='text-white font-bold text-2xl'>
+        <div className='text-white'>
           <Zoom right>
             <h1
-              className='mb-10 text-3xl'
-              style={{ fontFamily: "Texturina, serif" }}
+              className='mb-10 text-2xl font-normal'
             >
               Hello,
             </h1>
-            <h1
-              style={{ fontFamily: "Texturina, serif" }}
-              className='font-light mx-20 font-2xl'
+            <p
+              className='font-light mx-10 text-xl text-justify'
             >
               This is Sourav Sen Gupta. Currently, I am a student. I am doing
               B.Sc in CSE at Daffodil International University. Besides,I am
               doing Full Stack Web Development using many stacks. Creating
               something new always grabs my attention. I have created projects
               using Django, React, HTML, CSS, Js, JQuery, etc.
-            </h1>
+            </p>
           </Zoom>
         </div>
       </div>

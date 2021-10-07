@@ -35,24 +35,26 @@ function Contacts() {
       id='contact'
       className='ws min-h-screen bg-gradient-to-tr from-gray-600 ... pt-32 flex flex-col justify-center items-center'
     >
-      <h1 className='text-5xl text-white mb-10'>Contact</h1>
+      <h1 className='text-4xl font-medium text-white mb-10'>Contact</h1>
 
       <div className='pb-20 ml-20'>
         <Slide top cascade>
-          <h1 className='text-xl text-white mb-5 mt-10'>Send Your Messages</h1>
+          <h1 className='text-xl font-medium text-white mb-5 mt-10'>
+            Send Your Messages
+          </h1>
         </Slide>
         <form onSubmit={sendmail}>
           <div className='flex flex-col justify-center'>
             <Slide top cascade>
               <div className='lg:w-1/3 md:w-2/3 w-full pb-5'>
-                <label className='text-white text-lg font-bold mb-5'>
+                <label className='text-white text-lg font-normal mb-5'>
                   Email
                 </label>
                 <input
                   type='text'
                   name='email'
                   placeholder='example@gmail.com'
-                  className='  border-2 border-gray-200 rounded w-96 text-xl
+                  className='  border-2 border-gray-200 rounded w-96 text-base
                   py-2 px-4 text-black focus:outline-none focus:bg-gray-300 focus:border-teal-500'
                   required
                 />
@@ -61,14 +63,17 @@ function Contacts() {
 
             <Slide top cascade>
               <div className='lg:w-1/3 md:w-2/3 w-full pb-5'>
-                <label for='name' className='text-white text-lg font-bold mb-5'>
+                <label
+                  for='name'
+                  className='text-white text-lg font-normal mb-5'
+                >
                   Name
                 </label>
                 <input
                   type='text'
                   name='name'
                   placeholder='example'
-                  className=' border-2 border-gray-200 rounded w-96 text-xl 
+                  className=' border-2 border-gray-200 rounded w-96 text-base
                   py-2 px-4 text-black focus:outline-none focus:bg-gray-300 focus:border-teal-500'
                   required
                 />
@@ -76,7 +81,7 @@ function Contacts() {
             </Slide>
             <Slide top cascade>
               <div className='lg:w-1/3 md:w-2/3 w-full pb-12'>
-                <label className='text-white text-lg font-bold mb-5'>
+                <label className='text-white text-lg font-normal mb-5'>
                   Messages
                 </label>
                 <textarea
@@ -91,7 +96,11 @@ function Contacts() {
             </Slide>
             <Slide top cascade>
               <div className='flex justify-center items-center -ml-16'>
-                <input type='submit' value='Send' className=' btn w-28'></input>
+                <input
+                  type='submit'
+                  value='Send'
+                  className='py-2 px-3 rounded-full font-semibold cursor-pointer btn w-28'
+                ></input>
               </div>
             </Slide>
           </div>
@@ -114,15 +123,15 @@ function Contacts() {
             <img className='h-16 w-16' src={fb}></img>
           </a>
         </div>
-        <h2 className='text-white pt-10 shadow-2xl text-xl'>
+        <p className='text-white pt-10 text-xl font-normal'>
           Emergency Email : sourav15-11392@diu.edu.bd
-        </h2>
+        </p>
       </Roll>
       <Roll bottom cascade>
-        <h4 className='text-white typical drop-shadow-sm mx-40 my-20 text-3xl  '>
+        <h4 className='typical mx-40 my-20 text-2xl font-normal'>
           Love The Life You{" "}
-          <span className=' text-4xl font-bold text-white'> Live</span> The Life
-          You Love
+          <span className='text-3xl font-medium text-white'> Live</span> The
+          Life You Love
         </h4>
       </Roll>
     </div>

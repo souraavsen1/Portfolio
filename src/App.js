@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./index.css";
 import Navbar from "./Components/Navbar";
 import Header from "./Components/Header";
@@ -19,7 +18,7 @@ function App() {
   }, []);
 
   return (
-    <div className='bg-gradient-to-br from-gray-600 ... head'>
+    <div className='bg-gradient-to-br from-gray-600 ... head font_poppins'>
       {loader ? (
         <Loader/>
       ) : (

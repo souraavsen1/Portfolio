@@ -13,7 +13,7 @@ function Projects() {
       id='Projects'
       className='ws min-h-screen bg-gradient-to-br from-gray-700 ... pt-32 pb-16 flex flex-col justify-center items-center'
     >
-      <h1 className='text-5xl text-white mb-24'>Projects</h1>
+      <h1 className='text-4xl font-medium  text-white mb-24'>Projects</h1>
       <Flip left cascade>
         <div className='mr-auto grid grid-cols-4 mx-auto items-center justify-between'>
           <div
@@ -30,7 +30,7 @@ function Projects() {
             <h1 className='col-span-2 text-2xl font-semibold'>Hacksprint</h1>
 
             <div className='flex-row flex items-center justify-between mt-5'>
-              <a href='https://hacksprint.me' target='_blank'>
+              <a href='https://hacksprint.me' rel="noopener noreferrer" target='_blank'>
                 <img
                   src={visit}
                   alt='hacksprint'
@@ -39,7 +39,7 @@ function Projects() {
               </a>
               <a
                 href='https://github.com/souraavsen1/Hacksprint'
-                target='_blank'
+                rel="noopener noreferrer" target='_blank'
               >
                 <img
                   src={github}
@@ -65,14 +65,14 @@ function Projects() {
             </h1>
 
             <div className='flex-row flex items-center justify-between mt-5'>
-              <a href='https://todo-app-ss.netlify.app/' target='_blank'>
+              <a href='https://todo-app-ss.netlify.app/' rel="noopener noreferrer" target='_blank'>
                 <img
                   src={visit}
                   alt='hacksprint'
                   className='w-12 h-12 mx-auto '
                 />
               </a>
-              <a href='https://github.com/souraavsen1/ToDo_App' target='_blank'>
+              <a href='https://github.com/souraavsen1/ToDo_App' rel="noopener noreferrer" target='_blank'>
                 <img
                   src={github}
                   alt='hacksprint'
@@ -95,7 +95,7 @@ function Projects() {
             <h1 className='col-span-2 text-2xl font-semibold'>Breaking Bad</h1>
 
             <div className='flex-row flex items-center justify-between mt-5'>
-              <a href='https://breakingbadss.netlify.app/' target='_blank'>
+              <a href='https://breakingbadss.netlify.app/' rel="noopener noreferrer" target='_blank'>
                 <img
                   src={visit}
                   alt='hacksprint'
@@ -104,7 +104,7 @@ function Projects() {
               </a>
               <a
                 href='https://github.com/souraavsen1/Breaking_Bad'
-                target='_blank'
+                rel="noopener noreferrer" target='_blank'
               >
                 <img
                   src={github}
@@ -130,12 +130,12 @@ function Projects() {
             </h1>
 
             <div className='flex-row flex items-center justify-between mt-5'>
-              <a target='_blank'>
+              <a rel="noopener noreferrer" target='_blank'>
                 <img src={visit} alt='visit' className='w-12 h-12 mx-auto ' />
               </a>
               <a
                 href='https://github.com/souraavsen1/Pharmaceutical_Site'
-                target='_blank'
+                rel="noopener noreferrer" target='_blank'
               >
                 <img
                   src={github}

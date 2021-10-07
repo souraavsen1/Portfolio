@@ -21,9 +21,9 @@ function Header() {
         </div>
         <div className='text-white font-bold text-2xl'>
           <Bounce bottom cascade>
-            <h1 className='mb-10 text-4xl '>Hey there,</h1>
+            <h1 className='mb-10 text-3xl font-medium'>Hey there,</h1>
           </Bounce>
-          <h1 style={{ fontFamily: "cursive" }} className='font-light'>
+          <h1 style={{ fontFamily: "cursive" }} className='font-light text-lg'>
             <Typical
               className='typical mb-10'
               steps={[
@@ -35,6 +35,8 @@ function Header() {
                 2500,
                 "also doing Mobile Application Development",
                 2500,
+                "Building something new always attracts me the most.",
+                2500,
               ]}
               loop={Infinity}
             />
@@ -44,7 +46,7 @@ function Header() {
             href='https://drive.google.com/file/d/11jNdW1Lyeel4uMFfAYpEnq-z8kFtWorP/view?usp=sharing'
             target='_blank'
           >
-            <button className=' btn focus:outline-none animate-UpD cursor-pointer'>
+            <button className='btn text-base font-medium py-2 px-5 rounded-full focus:outline-none animate-UpD cursor-pointer'>
               Resume
             </button>
           </a>
