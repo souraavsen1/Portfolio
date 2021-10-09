@@ -12,7 +12,7 @@ function Header() {
       <div className='w-10/12 flex flex-col md:flex-row-reverse items-center justify-between'>
         <div>
           <img
-            className='rounded-lg shadow-2xl'
+            className='rounded-lg shadow-xl'
             Src={ss}
             alt='Sourav Sen'
             height='450px'

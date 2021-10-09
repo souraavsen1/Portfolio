@@ -99,7 +99,7 @@ function Contacts() {
                 <input
                   type='submit'
                   value='Send'
-                  className='py-2 px-3 rounded-full font-semibold cursor-pointer btn w-28'
+                  className='py-2 px-10 mx-auto rounded-full font-semibold cursor-pointer btn'
                 ></input>
               </div>
             </Slide>
@@ -124,7 +124,7 @@ function Contacts() {
           </a>
         </div>
         <p className='text-white pt-10 text-xl font-normal'>
-          Emergency Email : sourav15-11392@diu.edu.bd
+          Email : sourav15-11392@diu.edu.bd
         </p>
       </Roll>
       <Roll bottom cascade>

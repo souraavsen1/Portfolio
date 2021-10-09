@@ -1,9 +1,9 @@
 import "./index.css";
 import Navbar from "./Components/Navbar";
 import Header from "./Components/Header";
-import WorkingStacks from "./Components/WorkingStacks";
+import WorkingStacks from "./Components/Working-Stacks/WorkingStacks";
 import About from "./Components/About";
-import Projects from "./Components/Projects";
+import Projects from "./Components/Project-Section/Projects";
 import Contacts from "./Components/Contacts";
 import Loader from "./Components/Loader";
 import { useState, useEffect } from "react";
