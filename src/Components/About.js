@@ -48,8 +48,8 @@ function About() {
         </div>
         <div className='text-white'>
           <Zoom right>
-            <h1 className='mb-10 text-2xl font-normal'>Hello,</h1>
-            <p className='font-light mx-10 text-base text-justify'>
+            {/* <h1 className='mb-10 text-2xl font-normal'>Hello,</h1> */}
+            <p className='font-light mx-10 text-lg text-justify'>
               {data ? data[0].about : "About me"}
             </p>
           </Zoom>
