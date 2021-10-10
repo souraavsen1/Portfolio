@@ -40,23 +40,8 @@ function Header() {
       });
   }, []);
 
-  console.log(cv);
 
-  useEffect(() => {
-    // axios
-    //   .get(
-    //     "https://rfugrhgjljisxqzgdncp.supabase.co/rest/v1/Header?select=*",
-    //     header
-    //   )
-    //   .then(function (response) {
-    //     setCv(response.data[0]);
-    //   })
-    //   .catch(function (error) {
-    //     console.log(error);
-    //   });
-  }, []);
 
-  
   return (
     <div
       id='home'
@@ -104,7 +89,7 @@ function Header() {
           )}
 
           <a
-            href={cv ? cv.cv : ""}
+            href={cv ? cv.cv_link : ""}
             target='_blank'
           >
             <button className='btn text-base font-medium py-2 px-5 rounded-full focus:outline-none animate-UpD cursor-pointer'>
