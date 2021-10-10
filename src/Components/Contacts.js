@@ -64,7 +64,7 @@ function Contacts() {
             <Slide top cascade>
               <div className='lg:w-1/3 md:w-2/3 w-full pb-5'>
                 <label
-                  for='name'
+                  htmlFor='name'
                   className='text-white text-lg font-normal mb-5'
                 >
                   Name
