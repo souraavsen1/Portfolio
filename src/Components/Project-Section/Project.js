@@ -8,24 +8,24 @@ const Project = ({ project }) => {
       <div
         className=' card rounded-xl px-3 py-5 flex flex-col justify-center 
         relative z-10 items-center bg-gradient-to-br from-gray-300 to-transparent 
-        bg-opacity-20 h-80 w-60 shadow-xl  align-middle'
+        bg-opacity-20 h-80 w-64 shadow-xl  align-middle'
       >
         <div className='h-36 pb-2'>
           <img
-            src={project.cover_img}
+            src={project.image}
             alt='ss'
-            className='w-48 h-32 mx-auto col-span-2 my-auto '
+            className='w-24 h-24 mx-auto col-span-2 my-auto '
           />
         </div>
-        <h1 className='col-span-2 align-middle text-xl font-semibold'>
-          {project.title}
+        <h1 className='col-span-2 align-middle text-base font-semibold'>
+          {project.proect_name}
         </h1>
-        <p className='text-sm text-justify text-white font-light h-20'>
-          {project.description}
+        <p className='text-sm px-3  text-white font-light h-20 pt-4'>
+          {project.proect_description}
         </p>
 
         <div className='flex-row flex items-center justify-between mt-5'>
-          <a rel='noopener noreferrer' href={project.livesite} target='_blank'>
+          <a rel='noopener noreferrer' href={project.livelink} target='_blank'>
             <img src={visit} alt='visit' className='w-12 h-12 mx-auto ' />
           </a>
           <a href={project.github} rel='noopener noreferrer' target='_blank'>

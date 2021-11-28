@@ -14,44 +14,21 @@ body {
 .head{
   background-color: #02242c;
 }
-.ws{
-  background-color: #02242c;
-  /* font-family: 'Texturina', serif; */
-  font-weight: 600;
-}
-
 .color_primary{
   background-color: #0ce9da;
 }
 
 .btn{
   background-color: #0ce9da;
-  /* box-shadow: 1px 1px 1em #a6faf4; */
   color:black;
-  /* font-size: 16px;
-  font-weight: 400;
-  padding: 10px 20px ;
-  margin-top: 15px; */
-  /* font-family:cursive; */
-  /* border-radius: 10px;
-  cursor: pointer;  */
 }
 
 .btn:hover{
   background-color: #1bddd0;
-  /* box-shadow: 1px 1px 1em #c3faf6; */
   color:black;
-  /* font-size: 16px;
-  font-weight: 400;
-  padding: 11px 21px ;
-  margin-top: 15px; */
-  /* font-family:cursive; */
-  /* border-radius: 10px;
-  animation:none;
-  cursor: pointer; */
 }
 
-.typical{
+.secondary{
   color: #0ce9da;
 }
 

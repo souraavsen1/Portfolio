@@ -1,57 +1,57 @@
-import {React, useState,useEffect} from "react";
+import { React, useState, useEffect } from "react";
 import RubberBand from "react-reveal/RubberBand";
-import Roll from "react-reveal/Roll";
-import Stack from "./Stack";
-import axios from "axios";
+import "./Stack.css";
 
 function WorkingStacks() {
-
   const [stacks, setStacks] = useState([]);
-
-  const header = {
-    headers: {
-      apikey: process.env.REACT_APP_SUPABASE_ANON_KEY,
-      Authorization: `Bearer ${process.env.REACT_APP_SUPABASE_ANON_KEY}`,
-    },
-  };
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios
-      .get(
-        "https://rfugrhgjljisxqzgdncp.supabase.co/rest/v1/Stacks?select=*",
-        header
-      )
-      .then(function (response) {
-        setStacks(response.data);
-      })
-      .catch(function (error) {
-        console.log(error);
+    fetch(`https://intense-sierra-73040.herokuapp.com/stacks`)
+      .then((res) => res.json())
+      .then((data) => {
+        setStacks(data);
+        setLoading(false);
       });
   }, []);
 
   return (
     <div
-      id='WorkingStacks'
-      className='ws min-h-screen bg-gradient-to-tr from-gray-600 ... head pt-32 pb-16 flex flex-col justify-center items-center'
+      id='skills'
+      className='min-h-screen bg-gradient-to-tr from-gray-600 ... head py-20 flex flex-col justify-center items-center'
     >
-      <h1 className='text-4xl font-medium  text-white mb-24'>Working Stacks</h1>
-      <RubberBand>
-        <div className='grid grid-cols-5 gap-8'>
-          {stacks.map(stc=><Stack key={stc.id} stack={stc}></Stack>)}
+      <h1 className='text-4xl font-medium  text-white mb-24'>Skills</h1>
+
+      {loading ? (
+        <div class='border border-gray-300 border-opacity-50 shadow rounded-md p-4 max-w-5xl w-full mx-auto'>
+          <div class='animate-pulse flex space-x-4'>
+            <div class='rounded-full bg-gray-400 bg-opacity-50 h-12 w-12'></div>
+            <div class='flex-1 space-y-4 py-1'>
+              <div class='h-4 bg-gray-400 bg-opacity-50 rounded w-3/4'></div>
+              <div class='space-y-2'>
+                <div class='h-4 bg-gray-400 bg-opacity-50 rounded'></div>
+                <div class='h-4 bg-gray-400 bg-opacity-50 rounded w-5/6'></div>
+              </div>
+            </div>
+          </div>
         </div>
-      </RubberBand>
-      {/* <Roll bottom cascade>
-        <h4 className='text-white text-justify mx-40 my-10 text-lg font-light'>
-          I have many experiences of working on different platforms, different
-          languages like C, Java, JavaScript, Python. Though Python and
-          JavaScript are the most favorite among them. I have worked on
-          different Frameworks like Django, bootstrap, Django Rest-Framework and
-          also worked on React and tailwind CSS, many other UI components. I
-          really like Web Development. I have done many projects. I have
-          experiences doing live project of DIU CPC, which was “Hacksprint”. An
-          online judging platform for Web Developers.
-        </h4>
-      </Roll> */}
+      ) : (
+        <RubberBand>
+          <div className='w-11/12 md:w-9/12 mx-auto grid grid-cols-3 md:grid-cols-5 items-center gap-4 md:gap-y-4 md:gap-x-8 2xl:gap-10'>
+            {stacks.map((stc) => (
+              <div className='flex items-center'>
+                <div class='round'>
+                  <input type='checkbox' checked id='checkbox' />
+                  <label for='checkbox'></label>
+                </div>
+                <div className='ml-6 text-white text-opacity-80'>
+                  {stc.stack}
+                </div>
+              </div>
+            ))}
+          </div>
+        </RubberBand>
+      )}
     </div>
   );
 }

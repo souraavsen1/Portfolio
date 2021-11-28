@@ -10,7 +10,9 @@ module.exports = {
         UpD: "UpD 2s ease-in infinite",
       },
     },
-
+    listStyleType: {
+      square: "square",
+    },
     keyframes: {
       wiggle: {
         "0%, 100%": { transform: "rotate(-3deg)" },
@@ -18,8 +20,8 @@ module.exports = {
       },
 
       spin1: {
-        from : {transform: "rotate(0deg)"},
-        to: {transform: "rotate(360deg)"},
+        from: { transform: "rotate(0deg)" },
+        to: { transform: "rotate(360deg)" },
       },
 
       bounce1: {
@@ -28,7 +30,7 @@ module.exports = {
       },
       UpD: {
         "0%, 100%": { transform: "translateY(-25%)" },
-        "50%": {transform: "translateY(0)"},
+        "50%": { transform: "translateY(0)" },
       },
     },
   },

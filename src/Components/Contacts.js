@@ -1,7 +1,6 @@
 import React from "react";
 import fb from "../Images/fb.png";
 import github from "../Images/github1.png";
-import mail from "../Images/mail.png";
 import linkedin from "../Images/linkedin.png";
 import Roll from "react-reveal/Roll";
 import Slide from "react-reveal/Slide";
@@ -35,7 +34,7 @@ function Contacts() {
       id='contact'
       className='ws min-h-screen bg-gradient-to-tr from-gray-600 ... pt-32 flex flex-col justify-center items-center'
     >
-      <h1 className='text-4xl font-medium text-white mb-10'>Contact</h1>
+      <h1 className='text-4xl font-medium text-white mb-10'>Get In Touch</h1>
 
       <div className='pb-20 ml-20'>
         <Slide top cascade>
@@ -48,7 +47,7 @@ function Contacts() {
             <Slide top cascade>
               <div className='lg:w-1/3 md:w-2/3 w-full pb-5'>
                 <label className='text-white text-lg font-normal mb-5'>
-                  Email
+                  Your Email
                 </label>
                 <input
                   type='text'
@@ -67,7 +66,7 @@ function Contacts() {
                   htmlFor='name'
                   className='text-white text-lg font-normal mb-5'
                 >
-                  Name
+                  Your Name
                 </label>
                 <input
                   type='text'
@@ -82,7 +81,7 @@ function Contacts() {
             <Slide top cascade>
               <div className='lg:w-1/3 md:w-2/3 w-full pb-12'>
                 <label className='text-white text-lg font-normal mb-5'>
-                  Messages
+                  Message
                 </label>
                 <textarea
                   name='messages'
@@ -109,22 +108,31 @@ function Contacts() {
 
       <Roll top cascade>
         <div className='flex-row flex justify-between '>
-          <a href='https://github.com/souraavsen1' target='_blank'>
-            <img className='h-16 w-16 mr-12' src={github}></img>
+          <a
+            href='https://github.com/souraavsen1'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <img className='h-10 w-10 mr-12' alt='' src={github}></img>
           </a>
           <a
-            href='https://www.linkedin.com/in/souravsen-gupta-8747ab20b/'
+            href='https://www.linkedin.com/in/sourav-sen-gupta/'
             target='_blank'
+            rel='noreferrer'
           >
-            <img className='h-16 w-16 mr-12' src={linkedin}></img>
+            <img className='h-10 w-10 mr-12' alt='' src={linkedin}></img>
           </a>
 
-          <a href='https://facebook.com/souraavsen' target='_blank'>
-            <img className='h-16 w-16' src={fb}></img>
+          <a
+            href='https://facebook.com/souraavsen'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <img className='h-10 w-10' alt='' src={fb}></img>
           </a>
         </div>
         <p className='text-white pt-10 text-xl font-normal'>
-          Email : sourav15-11392@diu.edu.bd
+          Email : souravsengpt@gmail.com
         </p>
       </Roll>
       <Roll bottom cascade>
